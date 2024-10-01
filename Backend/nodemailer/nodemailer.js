@@ -27,6 +27,7 @@ function SendEmail({ email, name, phone, message }) {
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
+        console.error('Error sending email:', error);
         return reject({ error: error.message });
       }
       resolve({ message: "Email sent successfully" });
