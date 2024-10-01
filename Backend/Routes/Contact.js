@@ -1,7 +1,7 @@
 const express = require("express");
 const cors= require("cors");
 const SendEmail = require("../nodemailer/nodemailer");
-// const SendEmail = require("../nodemailer");
+
 
 const app =express();
 app.use(cors());

@@ -16,7 +16,13 @@ function SendEmail({ email, name, phone, message }) {
       from:email,
       to:process.env.EMAIL, 
       subject: `Contact Form Submission from ${name}`,
-      text: `You have a new contact form submission:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+      html: `
+      <h3>Contact Form Submission</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Message:</strong> ${message}</p>
+    `,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

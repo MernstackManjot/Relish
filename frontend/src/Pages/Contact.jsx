@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export const Contact = () => {
-  // State object to manage form inputs
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,44 +15,30 @@ export const Contact = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Handler for form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsSubmitting(true);
-  
+
     try {
-      const response = await fetch(import.meta.env.VITE_BASE_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      const response = await axios.post(import.meta.env.VITE_BASE_URL, formData);
+      
+      setResponseMessage(response.data.message);
+      alert('Message sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
       });
-  
-      const result = await response.json();
-      if (response.ok) {
-        setResponseMessage(result.message);
-        alert('Message sent successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-        });
-      } else {
-        setResponseMessage(result.error || 'Failed to send message');
-        alert(`Failed to send message: ${result.error || 'Unknown error'}`);
-      }
     } catch (error) {
-      setResponseMessage('An error occurred while sending the message.');
-      alert(`Error: ${error.message}`);
+      const errorMessage = error.response?.data?.error || 'Failed to send message';
+      setResponseMessage(errorMessage);
+      alert(`Failed to send message: ${errorMessage}`);
     } finally {
       setIsSubmitting(false);
     }
   };
-  
 
-  
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -62,13 +48,11 @@ export const Contact = () => {
   };
 
   return (
-    <div className=" text-gray-900 bg-green-50 p-8 md:p-12 lg:p-16 font-sans">
+    <div className="text-gray-900 bg-green-50 p-8 md:p-12 lg:p-16 font-sans">
       <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-4xl  text-gray-800 mb-6 text-center">Contact Us</h1>
-
+        <h1 className="text-4xl text-gray-800 mb-6 text-center">Contact Us</h1>
         <p className="text-lg md:text-xl mb-6 text-center">
-        Please fill the form below to contact us if you have any queries
-
+          Please fill the form below to contact us if you have any queries
         </p>
 
         <div className="flex justify-center">
