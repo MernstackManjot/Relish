@@ -21,7 +21,7 @@ export const Contact = () => {
     setIsSubmitting(true);
   
     try {
-      const response = await fetch('http://localhost:5600/contactRouter/contact', {
+      const response = await fetch(import.meta.env.VITE_BASE_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
