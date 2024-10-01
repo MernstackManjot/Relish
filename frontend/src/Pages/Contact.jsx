@@ -52,7 +52,7 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto space-y-8">
         <h1 className="text-4xl text-gray-800 mb-6 text-center">Contact Us</h1>
         <p className="text-lg md:text-xl mb-6 text-center">
-          Please fill the form below to contact us if you have any queries
+        <span>HELLO!</span>  Please fill the form below to contact us if you have any queries
         </p>
 
         <div className="flex justify-center">
