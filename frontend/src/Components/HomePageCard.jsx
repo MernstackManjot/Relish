@@ -14,7 +14,7 @@ export const HomeCard = () => {
   };
 
   const handleEducationConsultancy = () => {
-    navigate('/EducationConsultancy');
+    navigate('/Education');
   };
 
   return (

@@ -8,22 +8,12 @@ export const ExportImport = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {
-    console.log('Navigated to:', location.pathname, 'with state:', location.state);
-  }, [location]);
-
   const handleBack = () => {
-    if (location.state?.from) {
-      console.log('ExportImport Back navigation to:', location.state.from);
-      navigate(location.state.from, { replace: true });
-    } else {
-      console.log('No state found, navigating to home.');
-      navigate('/', { replace: true });
-    }
-  };
+    navigate(-1)
+};
 
   const handleExportImport = (path) => {
-    console.log('Navigating to:', path, 'with state:', { from: '/exportImport' });
+
     navigate(path, { state: { from: '/exportImport' } });
   };
     

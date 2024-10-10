@@ -53,7 +53,7 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <div className=" bg-green-50 text-zinc-500  sm:p-4 md:p-1 shadow-md font-serif ">
+    <div className="  text-zinc-500  sm:p-4 md:p-1 shadow-md font-serif ">
       <div className="flex items-center justify-between max-w-screen-xl mx-auto ">
 
         <div className="flex items-center p-1">

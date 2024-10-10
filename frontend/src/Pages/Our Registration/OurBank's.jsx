@@ -10,12 +10,8 @@ export const OurBankPage = () => {
   const location = useLocation();
 
   const handleBack = () => {
-    if (location.state?.from) {
-      navigate(location.state.from, { replace: true });
-    } else {
-      navigate('/', { replace: true });
-    }
-  };
+    navigate(-1)
+};
 
   useEffect(() => {
     window.scrollTo(0, 0);

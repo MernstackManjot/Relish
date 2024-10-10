@@ -52,19 +52,19 @@ const MobileLiClosed =()=>{
             {isOpen && (
                 <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-80"
                 onClick={MobileLiClosed}>
-                     <Link to="/digitalMarketing">
+                     <Link to="/digitalMarketing/SearchEngine">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Search Engine Optimization</li>
                     </Link>
-                    <Link to="/exportImport">
+                    <Link to="/digitalMarketing/SocialMedia">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Social Media Marketing </li>
                     </Link>
-                    <Link to="/EducationConsultancy/Education Consultancy Page">
+                    <Link to="/digitalMarketing/PayPerClick">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Pay-Per-Click Advertising</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/digitalMarketing/ContentMarketing">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Content Marketing</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/digitalMarketing/AnalyticsReporting">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Web Analytics Service</li>
                     </Link>
                     <Link to="/EducationConsultancy/IELTS">

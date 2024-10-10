@@ -229,6 +229,7 @@ export const EducationConsultancyPage = () => {
         {
             image: "https://img.freepik.com/free-photo/business-executives-discussing-with-their-colleagues-whiteboa_1170-1832.jpg?ga=GA1.1.830621292.1707550020&semt=ais_hybrid",
             title: " Educational Event and Workshop Planning",
+            color: "bg-red-300",
             content: [
                 {
                     subtitle: "Introduction:",
@@ -252,14 +253,16 @@ export const EducationConsultancyPage = () => {
                 {
                     subtitle: "Conclusion:",
                     text: " These events enhance students' educational experience by providing practical insights and networking opportunities."
-                }
+                },
+            
+
             ]
         },
     ];
 
     return (
         <>
-            <div className="bg-green-50 text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif min-h-screen">
+            <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif min-h-screen">
                 <div className="relative">
                     <div
                         onClick={handleBack}
@@ -267,11 +270,12 @@ export const EducationConsultancyPage = () => {
                     >
                         <FaArrowLeft className="text-2xl" />
                     </div>
-                    <div className="max-w-4xl mx-auto">
+                    <div className={`max-w-4xl mx-auto`}>
                         <h1 className="text-2xl ml-9 sm:text-2xl md:text-3xl font-bold mb-10 text-green-800 text-center ">Education Consultancy</h1>
                         <ul className="list-decimal space-y-14">
                             {consultancySections.map((section, index) => (
-                                <li key={index} className="flex flex-col md:flex-row md:space-x-4">
+                                <div className={``}>
+                                <li key={index} className={` flex flex-col md:flex-row md:space-x-4 `}>
                                     <div className="flex-1">
                                         <strong className="block mb-2 text-xl font-semibold">{section.title}</strong>
                                         <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
@@ -298,10 +302,11 @@ export const EducationConsultancyPage = () => {
                                         <img src={section.image} alt={section.title} className="w-full md:w-1/3 h-auto  mb-4 rounded-lg" />
                                     )}
                                 </li>
-                            ))}
+                                </div>  ))}
                         </ul>
 
                     </div>
+                    
                 </div>
             </div>
         </>

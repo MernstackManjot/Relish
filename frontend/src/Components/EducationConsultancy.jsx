@@ -9,12 +9,8 @@ export const EducationConsultancy = () => {
 
   const location = useLocation()
   const handleBack = () => {
-    if (location.state?.from) {
-      navigate(location.state.from);
-    } else {
-      navigate('/');
-    }
-  };
+    navigate(-1)
+};
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,8 +27,8 @@ export const EducationConsultancy = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:ml-32 lg:mr-32">
-        <Link to='/EducationConsultancy/Education Consultancy Page'>                        <CardEducation title="Education Consultancy" /></Link>
-        <Link to='/EducationConsultancy/IELTS'>                         <CardEducation title="IELTS" /></Link>
+        <Link to='/Education/Education Consultancy'>                        <CardEducation title="Education Consultancy" /></Link>
+        <Link to='/Education/IELTS'>                         <CardEducation title="IELTS" /></Link>
         {/* <Link to='/finance/MUDRA Loans'>                         <Card title="Mudra Loans" /></Link>
         <Link to='/finance/Startup Loans'>                       <Card title="Startup Loans" /></Link>
         <Link to='/finance/Commercial Vehicle Loans'>            <Card title="Commercial Vehicle Loans" /></Link>

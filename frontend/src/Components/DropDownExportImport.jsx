@@ -52,10 +52,10 @@ const MobileLiClosed =()=>{
             {isOpen && (
                 <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-48"
                 onClick={MobileLiClosed}>
-                     <Link to="/digitalMarketing">
+                     <Link to="/import">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Import Services</li>
                     </Link>
-                    <Link to="/exportImport">
+                    <Link to="/export">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Export Services</li>
                     </Link>
                   

@@ -150,9 +150,9 @@ export const Footer = () => {
           <li>
             <h3 className="text-2xl font-semibold mb-2 ">Quick Links</h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/">Home</Link></li>
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/about">About</Link></li>
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/contact">Contact Us</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/">Home</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/about">About</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/contact">Contact Us</Link></li>
             </ul>
           </li>
         </ul>
@@ -161,9 +161,9 @@ export const Footer = () => {
           <li>
             <h3 className="text-2xl font-semibold mb-2 ">Our Services</h3>
             <ul className="space-y-2">
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/">  Digital Marketing</Link></li>
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/">Export-Import</Link></li>
-              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/">Education</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/digitalMarketing">  Digital Marketing</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/exportImport">Export-Import</Link></li>
+              <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-2xl  mr-2" /><Link to="/Education">Education</Link></li>
               {/* <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/Registration"></Link></li>
               <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/Loans"></Link></li>
               <li className="flex items-center text-center"><MdKeyboardArrowRight className="text-xl  mr-2" /><Link to="/digitalMarketing"></Link></li> */}
@@ -176,12 +176,12 @@ export const Footer = () => {
           <li className=''>
             <h3 className='text-2xl font-bold  '> Our Registration</h3>
             <ul>
-              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className=" mr-2" /><Link to="/IEC">Export-Import (IEC)</Link></li>
-              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className=" mr-2" /><Link to="/about">GST </Link></li>
-              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className=" mr-2" /><Link to="/udyam">Udyam </Link></li>
-              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className=" mr-2" /><Link to="/tan">TAN </Link></li>
-              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className=" mr-2" /><Link to="/OurBank's">Our Bank's </Link></li>
-
+              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/IEC">Export-Import (IEC)</Link></li>
+              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/about">GST </Link></li>
+              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/udyam">Udyam </Link></li>
+              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/tan">TAN </Link></li>
+              <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/OurBank's">Our Bank's </Link></li>
+2
             </ul>
           </li>
         </ul>

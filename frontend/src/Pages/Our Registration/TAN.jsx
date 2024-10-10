@@ -7,11 +7,7 @@ export const TAN = () => {
     const location = useLocation()
 
     const handleBack = () => {
-        if (location.state?.from) {
-            navigate(location.state.from);
-        } else {
-            navigate('/');
-        }
+        navigate(-1)
     };
 
     useEffect(() => {

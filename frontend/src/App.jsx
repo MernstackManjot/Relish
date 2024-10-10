@@ -128,9 +128,9 @@ function App() {
 
 
 
-          <Route path="/EducationConsultancy" element={<EducationConsultancy />} />
-          <Route path="/EducationConsultancy/Education Consultancy Page" element={<EducationConsultancyPage />} />
-          <Route path="/EducationConsultancy/IELTS" element={<IELTS />} />
+          <Route path="/Education" element={<EducationConsultancy />} />
+          <Route path="/Education/Education Consultancy" element={<EducationConsultancyPage />} />
+          <Route path="/Education/IELTS" element={<IELTS />} />
           {/* <Route path="/EducationConsultancy/Standup Loan" element={<StandupLoan />} />
           <Route path="/EducationConsultancy/Home and Property Loan Guidance" element={<HomeandPropertyLoan />} />
           <Route path="/EducationConsultancy/Debt Restructuring and Refinancing" element={< DebtRestructuringandRefinancing />} />
