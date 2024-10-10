@@ -18,7 +18,9 @@ export const HomeCard = () => {
   };
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 bg-green-50 font-serif text-center">
+    <div className="p-4 sm:p-6 md:p-8
+    
+     font-serif text-center">
       <h1 className="text-2xl font-bold mb-1 text-green-900 inline-block">
         Our Services
       </h1>

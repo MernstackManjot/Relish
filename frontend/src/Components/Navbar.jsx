@@ -3,6 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { About } from './About';
 import { Service } from './Service';
+import { DropDownDigitalMarketing } from './DropDownDigitalMarketing';
+import { DropDownExportImport } from './DropDownExportImport';
+import { DropDownEducation } from './DropDownEducation';
 
 
 export const Navbar = () => {
@@ -20,7 +23,10 @@ export const Navbar = () => {
   const navdata = [
     { path: '/', name: 'Home' },
     { name: <About /> },
-    {  name: <Service /> },
+    {  name: <DropDownDigitalMarketing /> },
+    { name: <DropDownExportImport /> },
+    { name: <DropDownEducation /> },
+
     { path: '/contact', name: 'Contact' },
 
 
@@ -47,10 +53,10 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <div className=" bg-green-100 text-zinc-500  sm:p-4 md:p-1 shadow-md font-serif ">
+    <div className=" bg-green-50 text-zinc-500  sm:p-4 md:p-1 shadow-md font-serif ">
       <div className="flex items-center justify-between max-w-screen-xl mx-auto ">
 
-        <div className="flex items-center p-4">
+        <div className="flex items-center p-1">
           <img
             src='logo16.png'
             alt='Logo'

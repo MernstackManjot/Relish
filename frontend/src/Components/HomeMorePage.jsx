@@ -4,8 +4,8 @@ export const HomeMorePage = () => {
     return (
         <>
             <div>
-            <div className="relative w-full  h-[380px] md:h-[400px] lg:h-[450px] object-cover overflow-hidden font-thin bg-cover bg-center bg-fixed "
-                style={{ backgroundImage: "url('rlishphoto.jpg')" }}>
+            <div className="relative w-full  h-[380px] md:h-[350px] lg:h-[350px] object-cover overflow-hidden font-thin bg-cover bg-center bg-fixed "
+                style={{ backgroundImage: "url('relishphoto3.jpg')" }}>
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-center p-4">
                     <div>
                     <h1 className="text-2xl md:text-4xl font-bold mb-4">Request A free Quote!</h1>
