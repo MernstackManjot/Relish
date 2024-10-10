@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { IoMdArrowDropdown,IoMdArrowDropup } from "react-icons/io";
 
 export const About = () => {
     const [isOpen, setOpen] = useState(false);
@@ -42,9 +43,9 @@ const MobileLiClosed =()=>{
             >
                 <h1 className="text-xl font-bold mr-2">About Us</h1>
                 {isOpen ? (
-                    <FaChevronUp className="text-green-900 text-sm" />
+                    <IoMdArrowDropup className="text-green-900 text-md  " />
                 ) : (
-                    <FaChevronDown className="text-green-900 text-sm" />
+                    <IoMdArrowDropdown className="text-green-900 text-md " />
                 )}
             </div>
             {isOpen && (

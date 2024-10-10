@@ -3,6 +3,7 @@ import { FaUserFriends } from "react-icons/fa";
 import { FaChartBar } from "react-icons/fa";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { FcSelfServiceKiosk } from "react-icons/fc";
+import { FaComputer } from "react-icons/fa6";
 export const HomeChoose = () => {
     const data =[
         {
@@ -21,7 +22,7 @@ export const HomeChoose = () => {
             description:"We combine creativity with analytics."
           },
           {
-            icons:<FcSelfServiceKiosk />,
+            icons:<FaComputer />,
             title: "Full-Service Agency",
             description:"From SEO and PPC to content writing etc."
           },

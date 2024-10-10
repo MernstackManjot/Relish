@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { IoMdArrowDropdown,IoMdArrowDropup } from "react-icons/io";
 
 export const DropDownExportImport = () => {
     const [isOpen, setOpen] = useState(false);
@@ -42,9 +43,11 @@ const MobileLiClosed =()=>{
                 onClick={handleClick}
             >
                 <h1 className="text-xl font-bold mr-2">ExportImport</h1>
-                <div className={`ml- mr- transition-transform ${isOpen ? 'rotate-180' : ''}`}>
-                    {isOpen ? <FaChevronUp /> : <FaChevronDown />}
-                </div>
+                {isOpen ? (
+                    <IoMdArrowDropup className="text-green-900 text-md  " />
+                ) : (
+                    <IoMdArrowDropdown className="text-green-900 text-md " />
+                )}
             </div>
             {isOpen && (
                 <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-48"
