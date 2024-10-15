@@ -29,7 +29,7 @@ export const SocialMedia = () => {
                     <div className="relative">
                         <div
                             onClick={handleBack}
-                            className="fixed top- left sm:left-2 md:left-1  bg-green-700 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center z-10"
+                            className="fixed top- left-1  bg-green-700 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center z-10"
                         >
                             <FaArrowLeft className="text-2xl" />
                         </div>

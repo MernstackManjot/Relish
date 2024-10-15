@@ -42,7 +42,7 @@ export const CardWebDevelopment = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">
                     {
                         data.map((item, index) => (
-                            <div key={index} className="rounded-lg shadow-md p-8 bg-white border-red-800 border">
+                            <div key={index} className="rounded-lg shadow-md p-8 bg-white border-green-800 border">
                                 <h2 className="text-lg font-bold mb-2">{item.title}</h2>
                                 <p>{item.description}</p>
                             </div>
