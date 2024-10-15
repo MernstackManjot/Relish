@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { CardWebDevelopment } from '../../Components/CardWebDevelopment';
-import "../../CSS/BottomtoTop.css";
+import "../../CSS/BottomToTop.css";
 
 export const WebDevelopment = () => {
     const navigate = useNavigate();
@@ -12,10 +12,12 @@ export const WebDevelopment = () => {
     const [isCardVisible, setIsCardVisible] = useState(false);
     const cardRef = useRef(null);
 
+
     useEffect(() => {
         window.scrollTo(0, 0);
         setIsTextVisible(true);
     }, []);
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
