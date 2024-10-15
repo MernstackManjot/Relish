@@ -64,16 +64,16 @@ const MobileLiClosed =()=>{
                     <Link to="/digitalMarketing/ContentMarketing">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Content Marketing</li>
                     </Link>
-                    <Link to="/digitalMarketing/AnalyticsReporting">
+                    <Link to="/digitalMarketing/WebAnalyticsService">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Web Analytics Service</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/digitalMarketing/OnlineReputationManagement">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Online Reputation Management</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/digitalMarketing/VernacularMultilingualMarketing">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Vernacular Multilingual Marketing</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/digitalMarketing/SentimentAnalysis">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Sentiment Analysis</li>
                     </Link>
                    

@@ -34,7 +34,7 @@ export const VernacularMultilingualMarketing = () => {
                     >
                         <FaArrowLeft className="text-2xl" />
                     </div>
-                    <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Vernacular Multilingual Marketing</h1>
+                    <h1 className={`text-2xl md:text-5xl text-green-700 ml-10 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Vernacular Multilingual Marketing</h1>
                     <div className='md:flex justify-evenly gap-2 md:gap-20 items-center p-10'>
                         <div>
 

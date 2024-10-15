@@ -92,9 +92,10 @@ function App() {
           <Route path="/digitalMarketing/SentimentAnalysis" element={<SentimentAnalysis />} />
           <Route path="/digitalMarketing/VernacularMultilingualMarketing" element={<VernacularMultilingualMarketing />} />
           <Route path="/digitalMarketing/WebAnalyticsService" element={<WebAnalyticsService />} />
+          <Route path="/digitalMarketing/SocialMedia" element={<SocialMedia />} />
 
 
-
+          
           <Route path="/itSolution" element={<ITSolution />} />
 
 
