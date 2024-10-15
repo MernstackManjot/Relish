@@ -34,7 +34,7 @@ export const ContentMarketing = () => {
                         >
                             <FaArrowLeft className="text-2xl" />
                         </div>
-                        <h1 className={`text-2xl md:text-5xl text-green-700 ml-10 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}> Content Writing Agency</h1>
+                        <h1 className={`text-2xl md:text-5xl text-green-700  text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}> Content Writing Agency</h1>
                         <div className='md:flex justify-between items-center p-10'>
                             <div>
                                 <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> What is  <span className='text-green-900'> Content Marketing</span>
