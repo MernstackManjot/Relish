@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { CardWebDevelopment } from '../../Components/CardWebDevelopment';
-// import "../../CSS/BottomToTop.css";
+
+
 
 export const WebDevelopment = () => {
     const navigate = useNavigate();
