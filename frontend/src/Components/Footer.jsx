@@ -181,7 +181,7 @@ export const Footer = () => {
               <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/udyam">Udyam </Link></li>
               <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/tan">TAN </Link></li>
               <li className='flex items-center text-center mt-2'>    <MdKeyboardArrowRight className="text-2xl mr-2" /><Link to="/OurBank's">Our Bank's </Link></li>
-2
+
             </ul>
           </li>
         </ul>

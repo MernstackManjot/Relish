@@ -48,16 +48,35 @@ export const Contact = () => {
   };
 
   return (
-    <div className="text-gray-900 bg-green-50 p-8 md:p-12 lg:p-16 font-sans">
+    <div className="text-gray-900  p-8 md:p-12 lg:p-16 font-sans">
       <div className="max-w-4xl mx-auto space-y-8">
         <h1 className="text-4xl text-gray-800 mb-6 text-center">Contact Us</h1>
+
+<div className="">
+        <div className=' flex justify-center '>
+            <video 
+        className=" max-w-96 rounded-full  object-cover " 
+        autoPlay
+        loop
+        muted
+      >
+        <source src="relishcontact.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video></div>
+        <div>
         <p className="text-lg md:text-xl mb-6 text-center">
           Please fill the form below to contact us if you have any queries
         </p>
 
+        
+
+      
         <div className="flex justify-center">
-          <div className="bg-white p-8 rounded-lg shadow-xl w-full sm:w-10/12 lg:w-8/12">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+        
+          <div className="bg-gray-50 p-8 rounded-lg shadow-xl w-full sm:w-10/12 lg:w-8/12">
+          
+            <form className="space-y-6  " onSubmit={handleSubmit}>
+            
               <div>
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name</label>
                 <input
@@ -122,6 +141,8 @@ export const Contact = () => {
             </form>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );

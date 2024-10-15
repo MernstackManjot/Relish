@@ -1,20 +1,46 @@
 import React, { useEffect } from 'react';
 import { HiPaperAirplane } from "react-icons/hi2";
+import { HomeChoose } from '../Components/HomeChoose';
+import { Deliveringexcellence } from '../Components/Deliveringexcellence';
 export const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg-green-50 text-gray-800 p-6 sm:p-8 md:p-10 lg:p-7 font-serif">
-      <div className="max-w-4xl mx-auto space-y-8">
+    <>
+     <div className={`md:flex justify-evenly items-center p-10 gap-20 `}   >
         <div>
+          <h1 className="text-lg md:text-xl font-bold text-green-700">About Relish</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-green-950">Relish the Art  <span className='text-green-700'>of Digital Growth</span></h1>
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          At Relish, we believe in delivering digital marketing solutions that your brand can truly savor. As a full-service digital marketing agency, we specialize in creating customized strategies that resonate with your audience and amplify your online presence From social media management to SEO, content creation, and paid advertising, we blend creativity with data-driven insights to ensure your business stands out in today’s competitive digital landscape.
+          </p>
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          Our team of passionate marketers, designers, and strategists is dedicated to helping your brand grow by crafting compelling campaigns that drive engagement and results. At Relish, we don’t just market — we create experiences that leave a lasting impression.
+          </p>
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          We specialize in crafting dynamic digital marketing strategies that drive growth and enhance brand visibility.
+          </p>
+        </div>
+        <div className='h-96'>
+          <img
+            src="https://peerdemo.in/relish/wp-content/uploads/2024/10/about-1536x1290.png"
+            alt="Background"
+            className="w-full h-full rounded"
+          />
+        </div>
+      </div>
+      <Deliveringexcellence />
+    <div className=" text-gray-800 bg-gray-50 p-6 sm:p-8 md:p-10 lg:p-7 font-serif">
+      <div className="max-w-6xl mx-auto space-y-8">
+        {/* <div>
           <h1 className="text-3xl font-bold mb-4 text-green-800">About Us</h1>
           <p className="text-base sm:text-lg">
             Welcome to Relish Consultancy & Marketing, where we blend expertise and innovation to help
             businesses thrive in today’s dynamic marketplace. As a dedicated proprietorship firm, we specialize
             in three core areas: Digital Marketing, Export-Import, and Financial & Loan Consultancy.
           </p>
-        </div>
+        </div> */}
 
         <div>
           <h2 className="text-2xl font-semibold mb-2 text-green-800">Our Mission</h2>
@@ -41,7 +67,7 @@ export const About = () => {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold mb-2 text-green-800">Why Choose Us?</h2>
           <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
             <li><span className='font-bold'>  Client-Centric Approach:</span> We believe in building lasting relationships with our clients, offering 
@@ -52,10 +78,15 @@ export const About = () => {
             clients.</li>
 
           </ul> 
-        </div>
+        </div> */}
+
 
        
       </div>
     </div>
+
+
+    <HomeChoose />
+    </>
   );
 };

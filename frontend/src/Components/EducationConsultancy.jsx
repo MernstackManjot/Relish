@@ -17,11 +17,11 @@ export const EducationConsultancy = () => {
   }, []);
   return (
     <>
-      <div className="p-4 sm:p-6 md:p-8 bg-green-50 font-serif min-h-screen">
+      <div className="p-4 sm:p-6 md:p-8  font-serif max-h-screen">
         <div className="flex items-center mb-8">
-          <div onClick={handleBack} className="bg-green-800 h-10 text-gray-100 p-2 rounded-full cursor-pointer">
+          {/* <div onClick={handleBack} className="bg-green-800 h-10 text-gray-100 p-2 rounded-full cursor-pointer">
             <FaArrowLeft className="text-2xl" />
-          </div>
+          </div> */}
           <h1 className="text-3xl font-bold mb-8 text-green-800 flex-1 text-center">
           Education Consultancy
           </h1>

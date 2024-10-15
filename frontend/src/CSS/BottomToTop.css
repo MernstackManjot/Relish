@@ -1,0 +1,15 @@
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px); /* Start slightly lower */
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+  }
+  
+  .animate-slide {
+    animation: slideInUp 1s ease forwards; 
+  }
+  

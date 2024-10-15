@@ -42,7 +42,7 @@ const MobileLiClosed =()=>{
                 className="flex items-center cursor-pointer "
                 onClick={handleClick}
             >
-                <h1 className="text-xl font-bold mr-2">ExportImport</h1>
+                <h1 className="text-xl font-bold mr-2">Export-Import</h1>
                 {isOpen ? (
                     <IoMdArrowDropup className="text-green-900 text-md  " />
                 ) : (

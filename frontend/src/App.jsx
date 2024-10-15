@@ -56,6 +56,10 @@ import { EducationConsultancy } from "./Components/EducationConsultancy";
 import { EducationConsultancyPage } from "./Pages/EducationConsultancy/EducationConsultancyPage";
 import { IELTS } from "./Pages/EducationConsultancy/IELTS";
 import { OurBankPage } from "./Pages/Our Registration/OurBank's";
+import { OnlineReputationManagement } from "./Pages/DigitalMarketingServices/OnlineReputationManagement";
+import { SentimentAnalysis } from "./Pages/DigitalMarketingServices/SentimentAnalysis";
+import { VernacularMultilingualMarketing } from "./Pages/DigitalMarketingServices/VernacularMultilingualMarketing";
+import { WebAnalyticsService } from "./Pages/DigitalMarketingServices/WebAnalyticsService";
 
 function App() {
 
@@ -69,11 +73,13 @@ function App() {
             <Route path="/service" element={<Service />} />
             <Route path="/contact" element={<Contact />} />
 
+            <Route path="/digitalMarketing" element={<DigitalMarketingServices />} />
+            <Route path="/exportImport" element={<ExportImport />} />
+            <Route path="/Education" element={<EducationConsultancy />} />
 
-          </Route>
+        
 
           <Route path="/marketing" element={<Marketing />} />
-          <Route path="/digitalMarketing" element={<DigitalMarketingServices />} />
           <Route path="/digitalMarketing/web" element={<WebDevelopment />} />
           <Route path="/digitalMarketing/GraphicDesign" element={<GraphicDesign />} />
           <Route path="/digitalMarketing/AnalyticsReporting" element={<AnalyticsReporting />} />
@@ -82,7 +88,10 @@ function App() {
           <Route path="/digitalMarketing/EmailMarketing" element={<EmailMarketing />} />
           <Route path="/digitalMarketing/PayPerClick" element={<PayPerClick />} />
           <Route path="/digitalMarketing/SearchEngine" element={<SearchEngine />} />
-          <Route path="/digitalMarketing/SocialMedia" element={<SocialMedia />} />
+          <Route path="/digitalMarketing/OnlineReputationManagement" element={<OnlineReputationManagement />} />
+          <Route path="/digitalMarketing/SentimentAnalysis" element={<SentimentAnalysis />} />
+          <Route path="/digitalMarketing/VernacularMultilingualMarketing" element={<VernacularMultilingualMarketing />} />
+          <Route path="/digitalMarketing/WebAnalyticsService" element={<WebAnalyticsService />} />
 
 
 
@@ -90,7 +99,6 @@ function App() {
 
 
 
-          <Route path="/exportImport" element={<ExportImport />} />
           <Route path="/export" element={<ExportProduct />} />
           <Route path="/export/Textiles" element={<Textiles />} />
           <Route path="/export/Footwear" element={<Footwear />} />
@@ -128,7 +136,6 @@ function App() {
 
 
 
-          <Route path="/Education" element={<EducationConsultancy />} />
           <Route path="/Education/Education Consultancy" element={<EducationConsultancyPage />} />
           <Route path="/Education/IELTS" element={<IELTS />} />
           {/* <Route path="/EducationConsultancy/Standup Loan" element={<StandupLoan />} />
@@ -147,7 +154,7 @@ function App() {
           <Route path="/finance/Commercial Vehicle Loans" element={<CommercialVehicleLoans />} />
           <Route path="/finance/Startup Loans" element={<StartupLoans />} /> */}
 
-
+</Route>
 
 
 

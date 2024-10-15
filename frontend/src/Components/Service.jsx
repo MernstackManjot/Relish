@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { IoMdArrowDropdown,IoMdArrowDropup } from "react-icons/io";
 
 export const Service = () => {
     const [isOpen, setOpen] = useState(false);
@@ -43,13 +43,13 @@ const MobileLiClosed =()=>{
             >
                 <h1 className="text-xl font-bold mr-2">Service</h1>
                 {isOpen ? (
-                    <FaChevronUp className="text-green-900 text-sm" />
+                    <IoMdArrowDropup className="text-green-900 text-md  " />
                 ) : (
-                    <FaChevronDown className="text-green-900 text-sm" />
+                    <IoMdArrowDropdown className="text-green-900 text-md" />
                 )}
             </div>
             {isOpen && (
-                <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-52"
+                <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-68"
                 onClick={MobileLiClosed}>
                      <Link to="/digitalMarketing">
                         <li className="py-2 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Digital Marketing</li>
@@ -57,10 +57,10 @@ const MobileLiClosed =()=>{
                     <Link to="/exportImport">
                         <li className="py-2 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Export-Import</li>
                     </Link>
-                    <Link to="/EducationConsultancy/Education Consultancy Page">
+                    <Link to="/Education/Education Consultancy">
                         <li className="py-2 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Education Consultancy</li>
                     </Link>
-                    <Link to="/EducationConsultancy/IELTS">
+                    <Link to="/Education/IELTS">
                         <li className="py-2 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">IELTS</li>
                     </Link>
                 </ul>

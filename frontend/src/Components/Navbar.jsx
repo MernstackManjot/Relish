@@ -23,6 +23,7 @@ export const Navbar = () => {
   const navdata = [
     { path: '/', name: 'Home' },
     { name: <About /> },
+    // { name: <Service /> },
     {  name: <DropDownDigitalMarketing /> },
     { name: <DropDownExportImport /> },
     { name: <DropDownEducation /> },

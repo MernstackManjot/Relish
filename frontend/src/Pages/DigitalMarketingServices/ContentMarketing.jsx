@@ -1,7 +1,9 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import { SiTicktick } from "react-icons/si";
+
 
 export const ContentMarketing = () => {
 
@@ -11,56 +13,91 @@ export const ContentMarketing = () => {
         navigate(-1)
     };
 
-    
+
+    const [isTextVisible, setIsTextVisible] = useState(false);
+
+
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+        setIsTextVisible(true);
+    }, []);
     return (
         <>
 
-<div className="bg-green-50 text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif min-h-screen">
-      <div className="relative">
-        <div
-          onClick={handleBack}
-          className="fixed top-4 left-4 sm:left-6 md:left-8 bg-green-800 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center"
-        >
-          <FaArrowLeft className="text-2xl" />
-        </div>
-        <div className="max-w-4xl mx-auto ">
-                        <div>
-                            <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-800 text-center">  Content Marketing
-                            </h1>
-                            <p className="text-base sm:text-lg">
-                                Our content marketing strategies are aimed at attracting, engaging, and converting potential
-                                customers by delivering high-quality, valuable content. From blog posts to videos and infographics,
-                                we create content that positions your brand as an industry leader.
-                            </p>
+            <div className={`${isTextVisible ? 'animate-slide' : ''}`}>
+
+                <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ">
+                    <div className="relative">
+                        <div
+                            onClick={handleBack}
+                            className="fixed top- left-1 sm:left-2 md:left-2 bg-green-700 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center"
+                        >
+                            <FaArrowLeft className="text-2xl" />
                         </div>
-
-
-
-                        <div>
-                            <h2 className="text-xl mt-10 font-semibold mb-2 text-green-800">Our Content Marketing Services Include:</h2>
-                            <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg">
-                                <li><span className='text-black font-bold'>Blog Writing:</span>   Crafting SEO-optimized blogs that provide valuable insights and information to
-                                    your target audience.</li>
-                                <li> <span className='text-black font-bold'>Infographics & Ebooks:</span>   Developing visually engaging and informative content.
-                                </li>
-                                <li><span className='text-black font-bold'>Video Marketing:</span>   Producing videos that convey your brand’s message effectively.</li>
-                                <li> <span className='text-black font-bold'>Content Distribution:</span>  Promoting your content across multiple platforms to ensure maximum
-                                    reach.
-                                    .</li>
-
-
-                            </ul>
+                        <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}> Content Writing Agency</h1>
+                        <div className='md:flex justify-between items-center p-10'>
+                            <div>
+                                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> What is  <span className='text-green-900'> Content Marketing</span>
+                                </h1>
+                                <p className='max-w-xl space-y-3 text-lg font-'>
+                                    <p >If you’re familiar with digital marketing, you’ve likely heard the term Content Marketing before. But if you’re still unsure about what it means, don’t worry—we’re here to guide you through it.</p>
+                                    <p >Content Marketing is a strategic approach centered on creating and sharing valuable, relevant, and consistent content to engage and nurture your target audience effectively.</p>
+                                    <p>A decade ago, marketing was costly and required significant physical effort. Thanks to digital marketing, we can now reach our target audience and promote products and services with just a click of a button.</p>
+                                </p>
+                            </div>
+                            <div>
+                                <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Content-Marketing.png' className='rounded-lg  md:max-w-xl' />
+                            </div>
                         </div>
-
-
                     </div>
                 </div>
 
 
+                <div className='md:flex justify-evenly  items-center p-10 bg-green-100'>
+                    <div>
+                        <img src='https://img.freepik.com/free-vector/seo-analytics-team-concept-illustration_114360-28529.jpg?uid=R166271515&ga=GA1.2.830621292.1707550020&semt=ais_hybrid' className='rounded-lg  md:max-w-sm ' />
+                    </div>
+                    <div>
+                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Purpose of (SEM)<span className='text-green-900'> Content Marketing</span>
+                        </h1>
+                        <p className='max-w-xl space-y-3 text-lg font-'>
+                            <p >The primary goal of content marketing is to deliver valuable content to your audience.</p>
+                            <p >Whatever type of content you share with your audience, ensure it offers significant value. Offering valuable content for free has become a common strategy among marketers and influencers to attract traffic and convert leads into customers.</p>
+                            <p>Identifying the right niche and target audience is crucial for creating content that is both valuable and relevant.</p>
+                        </p>
+                    </div>
 
+                </div>
+
+
+
+                <div className='md:flex justify-between p-16 bg-gray-100'>
+                    <div>
+                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-800 gap-3"> Types of <span className='text-green-900'> Content Marketing</span>
+                        </h1>
+                        <p className='max-w-xl space-y-3 text-lg font-'>
+                            <p >Content Marketing different types of content like pictures, videos, audios, documents, online resources, etc. Some of the many types of Content Marketing are:</p>
+                            <ul className='text-lg space-y-2'>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Social Media Posts</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Blogs</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Videos</li>
+
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Courses</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Webinars</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Podcasts</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Presentations</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Ebooks</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Audio Books</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Checklists</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Whitepapers</li>
+                                <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />PDFs, etc.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div>
+                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Content-Marketing3-1536x1375.png' className='rounded-lg  md:max-w-2xl' />
+                    </div>
+                </div>
             </div>
         </>
     )
