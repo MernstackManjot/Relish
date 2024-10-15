@@ -52,7 +52,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa';
 import { DigitalCard } from './CardDigital';
 
-import '../CSS/BottomtoTop.css'
+
 
 export const DigitalMarketingServices = () => {
     const navigate = useNavigate()
