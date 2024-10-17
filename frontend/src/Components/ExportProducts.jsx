@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Card } from './Cards'
 import { FaArrowLeft } from 'react-icons/fa';
 import { ExportImportCard } from './CardExport-Import';
+import photorelish from "../../public/photorelish.jpg"
 
 export const ExportProduct = () => {
   const navigate = useNavigate()
@@ -18,15 +19,26 @@ export const ExportProduct = () => {
 
   return (
     <>
+    <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}  >Export Services</h1>
+                </div>
+            </div>
       <div className="p-4 sm:p-6 md:p-8 lg:p-10  font-serif min-h-screen">
-        <div className="flex flex-col sm:flex-row justify-center items-center mb-8 space-y-4 sm:space-y-0">
-          <div onClick={handleBack} className="bg-green-800 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center md:mb-48">
+        <div className="flex flex-col sm:flex-row justify-center items-center  mb-8 space-y-4 sm:space-y-0">
+          <div onClick={handleBack} className="bg-green-800 h-10 w-10 text-gray-100 p-2    rounded-full cursor-pointer flex items-center justify-center md:mb-48">
             <FaArrowLeft className="text-2xl " />
           </div>
           <div className="">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-green-800 text-center">
-              Export Services
-            </h1>
+            {/* <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-green-800 text-center">
+              
+            </h1> */}
             <p className='text-sm sm:text-base md:text-lg lg:text-xl text-black mx-auto '>
               At <span className='text-black font-bold'>Relish Consultancy & Marketing</span>, we specialize in delivering top-quality export solutions across a
               broad range of industries. With years of experience in the field, we ensure that our clients receive

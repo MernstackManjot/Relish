@@ -54,14 +54,14 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <div className="    shadow-md  text-black font-medium ">
+    <div className="   shadow-md  text-black font-medium ">
       <div className="flex items-center justify-between max-w-screen-xl mx-3 ">
 
-        <div className="flex items-center ">
+        <div className="flex items-center p-2">
           <img
-            src='Relishcmlogo.png'
+            src='logorelish.png'
             alt='Logo'
-            className='h-16 md:h-32 w-auto '
+            className='h-16 md:h-28 w-auto '
           />
           {/* <h1 className='text-5xl '>Logo</h1> */}
         </div>

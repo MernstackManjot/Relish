@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-
+import photorelish from "../../../public/photorelish.jpg"
+ 
 export const IELTS = () => {
     const navigate = useNavigate();
 
@@ -15,7 +16,18 @@ export const IELTS = () => {
 
     return (
         <>
-            <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif min-h-screen">
+        <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}  >IELTS</h1>
+                </div>
+            </div>
+            <div className=" p-6 sm:p-8 md:p-10 lg:p-12 ">
                 <div className="relative">
                     <div
                         onClick={handleBack}
@@ -24,7 +36,7 @@ export const IELTS = () => {
                         <FaArrowLeft className="text-2xl" />
                     </div>
                     <div className="max-w-4xl mx-auto">
-                        <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-green-800 text-center">IELTS</h1>
+                        {/* <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-green-800 text-center"></h1> */}
 
                         <div className=' flex flex-col md:flex-row md:space-x-4 mb-6'>
                             <div className='flex-1'>

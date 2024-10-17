@@ -39,10 +39,10 @@ export const HomeChoose = () => {
           />
         </div>
         <div>
-          <h1 className="text-lg md:text-xl font-bold text-green-700">
+          <h1 className="text-lg md:text-xl font-bold text-green-800">
           Why Choose Us</h1>
-          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-green-950">Relish the Power  <span className='text-green-700'>of Precision Marketing</span></h1>
-          <p className="mb-2 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-green-950">Relish the Power  <span className='text-green-800'>of Precision Marketing</span></h1>
+          <p className="mb-2 text-sm md:text-lg max-w-xl mx-auto ">
           At Relish, we’re more than just a digital marketing agency — we’re your strategic partner for growth.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap- ">
@@ -50,7 +50,7 @@ export const HomeChoose = () => {
                         <div key={index} className={`p-4   `}>
                             <div className="flex items-center justify-evenly mb-4 gap-4">
                                 <div>
-                                    <h1 className="text-2xl rounded-lg p-2 text-white bg-green-800 font-semibold mb-2">{item.icons}</h1>
+                                    <h1 className="text-2xl rounded-lg p-2 text-white bg-green-800 d mb-2">{item.icons}</h1>
                                 </div>
                                 <div>
                             <h3 className="text-xl font-semibold mb-">{item.title}</h3>

@@ -13,7 +13,7 @@ export const ExportImportCard = ({ title, onClick }) => {
                     </div>
 
                     <div > {/* Added margin-top for spacing */}
-                        <h3 className="text-xl font-semibold mb-4">{title}</h3>
+                        <h3 className="text-xl font-semibold mb-4 mr-4">{title}</h3>
                     </div>
                 </div>
             </div>

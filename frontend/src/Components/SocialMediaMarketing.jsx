@@ -73,7 +73,7 @@ export const SocialMediaMarketing = () => {
                 loop
                 muted
             >
-                <source src="relishvideo9.mp4" type="video/mp4" />
+                <source src="/relishvideo9.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 

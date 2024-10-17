@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
-import photorelish from "../../../public/photorelish.jpg"
+import photorelish from "./images/photorelish.jpg"
 
 
 export const ContentMarketing = () => {

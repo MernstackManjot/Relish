@@ -21,15 +21,15 @@ export const About = () => {
             </div>
      <div className={`md:flex justify-evenly items-center p-10 gap-20 `}   >
         <div>
-          <h1 className="text-lg md:text-xl font-bold text-green-700">About Relish</h1>
-          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-green-950">Relish the Art  <span className='text-green-700'>of Digital Growth</span></h1>
-          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          <h1 className="text-lg md:text-xl font-bold text-green-800">About Relish</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-5 text-green-950">Relish the Art  <span className='text-green-800'>of Digital Growth</span></h1>
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto ">
           At Relish, we believe in delivering digital marketing solutions that your brand can truly savor. As a full-service digital marketing agency, we specialize in creating customized strategies that resonate with your audience and amplify your online presence From social media management to SEO, content creation, and paid advertising, we blend creativity with data-driven insights to ensure your business stands out in today’s competitive digital landscape.
           </p>
-          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto ">
           Our team of passionate marketers, designers, and strategists is dedicated to helping your brand grow by crafting compelling campaigns that drive engagement and results. At Relish, we don’t just market — we create experiences that leave a lasting impression.
           </p>
-          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto font-semibold">
+          <p className="mb-5 text-sm md:text-lg max-w-xl mx-auto ">
           We specialize in crafting dynamic digital marketing strategies that drive growth and enhance brand visibility.
           </p>
         </div>
@@ -42,7 +42,7 @@ export const About = () => {
         </div>
       </div>
       <Deliveringexcellence />
-    <div className=" text-gray-800 bg-gray-50 p-6 sm:p-8 md:p-10 lg:p-7 font-serif">
+    <div className="  bg-gray-100 p-6 sm:p-8 md:p-10 lg:p-7 ">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* <div>
           <h1 className="text-3xl font-bold mb-4 text-green-800">About Us</h1>

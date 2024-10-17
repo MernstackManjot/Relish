@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Card } from './Cards'
 import { FaArrowLeft } from 'react-icons/fa';
 import { ExportImportCard } from './CardExport-Import';
+import photorelish from "../../public/photorelish.jpg"
 
 export const ImportProduct = () => {
   const navigate = useNavigate()
@@ -17,6 +18,17 @@ export const ImportProduct = () => {
   }, []);
   return (
     <>
+    <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}  > Import Services</h1>
+                </div>
+            </div>
       <div className="p-4 sm:p-6 md:p-8  font-serif min-h-screen">
         <div className="flex items-center mb-8">
 
@@ -24,9 +36,9 @@ export const ImportProduct = () => {
             <FaArrowLeft className="text-2xl" />
           </div>
 
-          <h1 className="text-3xl font-bold mb-8 text-green-800 flex-1 text-center ">
+          {/* <h1 className="text-3xl font-bold mb-8 text-green-800 flex-1 text-center ">
             Import Services
-          </h1>
+          </h1> */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  justify-center">
         <Link to="/import/Crude Oil and Petroleum Products">  <ExportImportCard title="Crude Oil and Petroleum Products"/></Link>

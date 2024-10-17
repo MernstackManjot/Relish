@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import photorelish from "../../../public/photorelish.jpg"
 
 export const EducationConsultancyPage = () => {
     const navigate = useNavigate();
@@ -13,7 +14,6 @@ export const EducationConsultancyPage = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    // Array of consultancy sections
     const consultancySections = [
         {
             image: "https://img.freepik.com/premium-photo/businesswoman-businessman-working-tablet-pc-office_1313853-113560.jpg?ga=GA1.1.830621292.1707550020&semt=ais_hybrid",
@@ -262,7 +262,19 @@ export const EducationConsultancyPage = () => {
 
     return (
         <>
-            <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif min-h-screen">
+
+<div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}  >Education Consultancy</h1>
+                </div>
+            </div>
+            <div className="  p-6 sm:p-8 md:p-10 lg:p-12  min-h-screen">
                 <div className="relative">
                     <div
                         onClick={handleBack}
@@ -271,7 +283,7 @@ export const EducationConsultancyPage = () => {
                         <FaArrowLeft className="text-2xl" />
                     </div>
                     <div className={`max-w-4xl mx-auto`}>
-                        <h1 className="text-2xl ml-9 sm:text-2xl md:text-3xl font-bold mb-10 text-green-800 text-center ">Education Consultancy</h1>
+                        {/* <h1 className="text-2xl ml-9 sm:text-2xl md:text-3xl font-bold mb-10 text-green-800 text-center "></h1> */}
                         <ul className="list-decimal space-y-14">
                             {consultancySections.map((section, index) => (
                                 <div className={``}>
