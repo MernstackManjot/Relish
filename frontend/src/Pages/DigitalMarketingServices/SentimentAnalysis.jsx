@@ -6,6 +6,7 @@ import { FaArrowLeft } from 'react-icons/fa';
 
 
 import { CardSentimentAnalysis } from '../../Components/CardSentimentAnalysis';
+import photorelish from "../../../public/photorelish.jpg"
 
 
 export const SentimentAnalysis = () => {
@@ -25,11 +26,21 @@ export const SentimentAnalysis = () => {
     }, []);
     return (
         <>
-            
+             <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Sentiment Analysis </h1>
+                </div>
+                </div>
 
             <div className={`${isTextVisible ? 'animate-slide' : ''}`}>
 
-            <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ">
+            <div className=" p-6 sm:p-8 md:p-10 lg:p-12 fo">
                 <div className="relative">
                     <div
                         onClick={handleBack}
@@ -37,7 +48,7 @@ export const SentimentAnalysis = () => {
                     >
                         <FaArrowLeft className="text-2xl" />
                     </div>
-                    <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Sentiment Analysis</h1>
+                    {/* <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Sentiment Analysis</h1> */}
                     <div className='md:flex justify-evenly gap-2 md:gap-20 items-center p-10'>
                         <div>
 
@@ -54,7 +65,7 @@ export const SentimentAnalysis = () => {
             </div>
 
             <div className='p-10 bg-green-50'>
-                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-700 text-center gap-3"> What is <span className='text-green-900'>Sentiment Analysis?</span>
+                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-950 text-center gap-3"> What is <span className='text-green-800'>Sentiment Analysis?</span>
                 </h1>
                 <div className='md:flex justify-center items-center p-10 gap-40'>
 
@@ -73,7 +84,7 @@ export const SentimentAnalysis = () => {
 
            
             <div className='p-10 bg-gray-100'>
-                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-700 text-center gap-3">Why Businesses Need <span className='text-green-900'>Sentiment Analysis?</span>
+                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-950 text-center gap-3">Why Businesses Need <span className='text-green-800'>Sentiment Analysis?</span>
                 </h1>
                 <div className='md:flex justify-center items-center p-10 gap-40'>
 

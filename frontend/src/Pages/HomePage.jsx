@@ -6,6 +6,7 @@ import { ChooseUs } from '../Components/ChooseUs';
 import { AboutHome } from '../Components/AboutHome';
 import { Deliveringexcellence } from '../Components/Deliveringexcellence';
 import { HomeChoose } from '../Components/HomeChoose';
+import { Link } from 'react-router-dom';
 
 
 export const HomePage = () => {
@@ -34,7 +35,7 @@ export const HomePage = () => {
                 </div>
             </div> */}
 
-<div className="relative w-full h-[530px] md:h-[400px] lg:min-h-screen overflow-hidden font-thin">
+<div className="relative w-full h-[530px] md:h-[400px] lg:h-[530px] overflow-hidden font-thin">
                 <video 
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay
@@ -47,12 +48,20 @@ export const HomePage = () => {
                 <div className="absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
                     <div className={`  `}>
                         <h1 className={` text-2xl md:text-4xl font-bold mb-4 md:ml-10 `} >Relish Consultancy & Marketing</h1>
-                        <p  className={`text-sm md:text-lg max-w-md mx-auto font-semibold `} >
+                        <p  className={`text-sm md:text-lg max-w-lg mx-auto font-medium `} >
                             We are a well-established Consultancy & Marketing Company in India. Relish Consultancy & Marketing is headquartered in Mohali, Punjab.
                         </p>
-                        {/* <Link to="/contact"><button ref={(el) => (cardRefs.current[2] = el)} className={`bg-red-700 text-white py-3 px-8 mt-5 rounded-lg font-bold transition duration-300 transform hover:bg-red-600 hover:scale-105 active:scale-95 ${visibleCards[2] ? 'animate-slide' : ''}`} >
-                            Contact Us
-                        </button></Link> */}
+                        <div className="flex justify-center items-center mt-3">
+            <Link to="/contact">
+                <div className="relative inline-block overflow-hidden group">
+                    <button className="bg-white text-black font-medium py-3 px-8 rounded-lg transition duration-300 z-10">
+                        Contact Us
+                    </button>
+                    <span className="absolute inset-0 bg-green-700 font-medium rounded-lg py-3 px-8 transform  scale-y-0 scale-x-0  transition-transform duration-300 origin-top-left group-hover:scale-x-100 group-hover:scale-y-100"> Contact Us</span>
+                </div>
+            </Link>
+        </div>
+
                     </div>
                 </div>
             </div>

@@ -42,16 +42,22 @@ const MobileLiClosed =()=>{
                 className="flex items-center cursor-pointer "
                 onClick={handleClick}
             >
-                <h1 className="text-xl font-bold mr-2">Digital Marketing</h1>
+                <h1 className=" font-medium mr-">Digital Marketing</h1>
                 {isOpen ? (
-                    <IoMdArrowDropup className="text-green-900 text-md  " />
+                    <IoMdArrowDropup className=" text-md  " />
                 ) : (
-                    <IoMdArrowDropdown className="text-green-900 text-md" />
+                    <IoMdArrowDropdown className=" text-md" />
                 )}
             </div>
             {isOpen && (
-                <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-80"
+                <ul className="mt-2 list-none  font-medium fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg "
                 onClick={MobileLiClosed}>
+                     <Link to="/digitalMarketing/Web">
+                        <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Web Development</li>
+                    </Link>
+                    <Link to="/digitalMarketing/GraphicDesign">
+                        <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Graphic Design</li>
+                    </Link>
                      <Link to="/digitalMarketing/SearchEngine">
                         <li className="py-1 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">Search Engine Optimization</li>
                     </Link>

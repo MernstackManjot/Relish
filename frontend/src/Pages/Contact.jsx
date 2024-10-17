@@ -47,13 +47,32 @@ export const Contact = () => {
     }));
   };
 
+  const Spinner = () => (
+    <div className='text-center flex justify-center '>
+    <div className="animate-spin h-5 w-5 border-4 border-t-transparent border-white rounded-full text-center"></div>
+    </div>
+  );
+   
+
   return (
+    <>
+    <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src="photorelish.jpg"
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-5xl font-bold mb- `}>Contact Us  </h1>
+                </div>
+            </div>
     <div className="text-gray-900  p-8 md:p-12 lg:p-16 font-sans">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-4xl text-gray-800 mb-6 text-center">Contact Us</h1>
+      <div className="max-w-4xl mx-auto space-y-">
+        <h1 className="text-4xl text-gray-800  text-center"></h1>
 
 <div className="">
-        <div className=' flex justify-center '>
+        {/* <div className=' flex justify-center '>
             <video 
         className=" max-w-96 rounded-full  object-cover " 
         autoPlay
@@ -62,7 +81,7 @@ export const Contact = () => {
       >
         <source src="relishcontact.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video></div>
+      </video></div> */}
         <div>
         <p className="text-lg md:text-xl mb-6 text-center">
           Please fill the form below to contact us if you have any queries
@@ -131,12 +150,13 @@ export const Contact = () => {
 
               <div>
                 <button
-                  type="submit"
-                  className={`w-full px-4 py-2 rounded-md text-white ${isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'} transition-colors duration-300 ease-in-out`}
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Submitting...' : 'Submit'}
-                </button>
+  type="submit"
+  className={`w-full px-4 py-2 rounded-md text-white ${isSubmitting ? 'bg-gray-400 cursor-not-allowed motion-reduce:hidden' : 'bg-green-600 hover:bg-green-700'} transition-colors duration-300 ease-in-out`}
+  disabled={isSubmitting}
+>
+  {isSubmitting ? <Spinner />  : 'Submit'}
+</button>
+
               </div>
             </form>
           </div>
@@ -145,5 +165,6 @@ export const Contact = () => {
       </div>
       </div>
     </div>
+    </>
   );
 };

@@ -17,7 +17,7 @@ export const ImportProduct = () => {
   }, []);
   return (
     <>
-      <div className="p-4 sm:p-6 md:p-8 bg-green-50 font-serif min-h-screen">
+      <div className="p-4 sm:p-6 md:p-8  font-serif min-h-screen">
         <div className="flex items-center mb-8">
 
           <div onClick={handleBack} className="bg-green-800 h-10 text-gray-100 p-2 rounded-full cursor-pointer">

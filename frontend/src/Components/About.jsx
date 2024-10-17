@@ -24,11 +24,10 @@ const MobileLiClosed =()=>{
     setOpen(false)
 }
     useEffect(() => {
-        // Add event listeners
         document.addEventListener('mousedown', handleOutsideClick);
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up event listeners
+        
         return () => {
             document.removeEventListener('mousedown', handleOutsideClick);
             window.removeEventListener('scroll', handleScroll);
@@ -41,15 +40,15 @@ const MobileLiClosed =()=>{
                 className="flex items-center cursor-pointer "
                 onClick={handleClick}
             >
-                <h1 className="text-xl font-bold mr-2">About Us</h1>
+                <h1 className=" font-medium mr-">About Us</h1>
                 {isOpen ? (
-                    <IoMdArrowDropup className="text-green-900 text-md  " />
+                    <IoMdArrowDropup className=" text-md  " />
                 ) : (
-                    <IoMdArrowDropdown className="text-green-900 text-md " />
+                    <IoMdArrowDropdown className=" text-md " />
                 )}
             </div>
             {isOpen && (
-                <ul className="mt-2 list-none fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg w-48"
+                <ul className="mt-2 list-none font-medium fixed bg-white z-10 border border-gray-300 rounded-md shadow-lg "
                 onClick={MobileLiClosed}>
                     <Link to="/about">
                         <li className="py-2 px-4 hover:bg-green-100 cursor-pointer transition-colors duration-300">About Us</li>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
+import photorelish from "../../../public/photorelish.jpg"
 
 
 export const ContentMarketing = () => {
@@ -23,10 +24,20 @@ export const ContentMarketing = () => {
     }, []);
     return (
         <>
+            <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
 
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Content Writing Agency   </h1>
+                </div>
+            </div>
             <div className={`${isTextVisible ? 'animate-slide' : ''}`}>
 
-                <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ">
+                <div className="  p-6 sm:p-8 md:p-10 lg:p-12  ">
                     <div className="relative">
                         <div
                             onClick={handleBack}
@@ -34,7 +45,7 @@ export const ContentMarketing = () => {
                         >
                             <FaArrowLeft className="text-2xl" />
                         </div>
-                        <h1 className={`text-2xl md:text-5xl text-green-700  text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}> Content Writing Agency</h1>
+                        {/* <h1 className={`text-2xl md:text-5xl text-green-700 ml-2 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}> </h1> */}
                         <div className='md:flex justify-between items-center p-10'>
                             <div>
                                 <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> What is  <span className='text-green-900'> Content Marketing</span>
@@ -55,7 +66,7 @@ export const ContentMarketing = () => {
 
                 <div className='md:flex justify-evenly  items-center p-10 bg-green-100'>
                     <div>
-                        <img src='https://img.freepik.com/free-vector/seo-analytics-team-concept-illustration_114360-28529.jpg?uid=R166271515&ga=GA1.2.830621292.1707550020&semt=ais_hybrid' className='rounded-lg  md:max-w-sm ' />
+                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Content-Marketing2.png' className='rounded-lg  md:max-w-sm ' />
                     </div>
                     <div>
                         <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Purpose of (SEM)<span className='text-green-900'> Content Marketing</span>
@@ -95,7 +106,7 @@ export const ContentMarketing = () => {
                         </p>
                     </div>
                     <div>
-                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Content-Marketing3-1536x1375.png' className='rounded-lg  md:max-w-2xl' />
+                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Content-Marketing3-1536x1375.png' className='rounded-lg  md:max-w-xl' />
                     </div>
                 </div>
             </div>

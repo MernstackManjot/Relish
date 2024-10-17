@@ -1,10 +1,7 @@
-
 import React, { useEffect, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-
-
-
+import photorelish from "../../../public/photorelish.jpg"
 export const SearchEngine = () => {
 
     const navigate = useNavigate()
@@ -25,25 +22,36 @@ export const SearchEngine = () => {
    
     return (
         <>
-         
+         <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
 
-            <div  className={`${isTextVisible ? 'animate-slide' : ''}`}>
-                <div className={`bg-gray-100 text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif `} >
-                    <div className="relative">
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Search Engine Optimization   </h1>
+                </div>
+                </div>
+          <div className="relative p-">
                         <div
                             onClick={handleBack}
                             className="fixed top- left-1 sm:left-1 md:left-2 bg-green-700 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center"
                         >
                             <FaArrowLeft className="text-2xl" />
                         </div>
-                    <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb-10 ${isTextVisible ? 'animate-slide' : ''}`}> Search Engine Optimization </h1>
+                    {/* <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb-10 ${isTextVisible ? 'animate-slide' : ''}`}> </h1> */}
+                    </div>
+            <div  className={`${isTextVisible ? 'animate-slide' : ''}`}>
+                <div className={`bg-gray-100  p-6 sm:p-8 md:p-10 lg:p-12 `} >
+                   
 
-                        <div className=" mx-auto  ">
+                        <div className=" mx-auto  bg-gray-100">
                             <div>
-                                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 text-center ml-10"> Are you searching <span className='text-green-800'>for Best SEO company</span>
+                                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 ml-3 "> Are you searching <span className='text-green-900'>for Best SEO company</span>
                                 </h1>
-                                <p className="text-base sm:text-lg text-center space-x-5 space-y-4 items-center gap-6">
-                                    <p> In today’s fast-paced world, people seek instant answers to their every question, turning to search engines for everything from simple queries like “how to make toast” to more complex ones like “how to invest in the stock market.</p>
+                                <p className="text-base sm:text-lg  space-x-3 space-y-4 items-center gap-6">
+                                    <p className='ml-3'> In today’s fast-paced world, people seek instant answers to their every question, turning to search engines for everything from simple queries like “how to make toast” to more complex ones like “how to invest in the stock market.</p>
                                     <p>Search engines like Google, Yahoo, and Bing provide millions of results for each search, but most users never scroll past the first page. In fact, around 95% of web traffic goes to websites featured on the first page, leaving only 5% for those that rank lower.</p>
                                     <p>That’s where Relish comes in. As a leading SEO services company. We’re more than just another digital marketing agency — we’re your strategic partner in the digital landscape. Our expert team is dedicated to optimizing your online presence, ensuring your business secures and maintains a top position in search engine rankings.</p>
                                     <p>At Ashcon's, we offer a full range of digital marketing services tailored to increase your visibility and drive organic traffic. With a customized approach and carefully curated content, we help your business thrive in the competitive online world.</p>
@@ -54,7 +62,7 @@ export const SearchEngine = () => {
                     </div>
                 </div>
 
-                <div className='md:flex justify-between p-16'>
+                <div className='md:flex justify-between p-16 from-neutral-950'>
                     <div>
                         <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> SEO Consultancy <span className='text-green-900'> Services</span>
                         </h1>
@@ -67,14 +75,14 @@ export const SearchEngine = () => {
                         </p>
                     </div>
                     <div>
-                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/3430103-removebg-preview.png' className='rounded-lg shadow-lg md:max-w-2xl' />
+                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/3430103-removebg-preview.png' className='rounded-lg  md:max-w-2xl' />
                     </div>
                 </div>
 
 
-                <div className='md:flex justify-between items-center p-16 bg-green-50 gap-14'>
+                <div className='md:flex justify-between items-center p-16 bg-green-100 gap-14'>
                     <div>
-                        <img src='https://img.freepik.com/free-vector/seo-optimization-concept-illustration_114360-25890.jpg?uid=R166271515&ga=GA1.1.830621292.1707550020&semt=ais_hybrid' className='rounded-lg md:max-w-2xl mb-6' />
+                        <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/10670006-removebg-preview.png' className='rounded-lg md:max-w-2xl mb-6' />
                     </div>
                     <div>
                         <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> Local <span className='text-green-900'> SEO Services</span>
@@ -112,7 +120,7 @@ export const SearchEngine = () => {
                         <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/image23.png' className='rounded-lg  md:max-w-2xl mb-6' />
                     </div>
                     <div>
-                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Keywords<span className='text-green-900'>Research Analysis</span>
+                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Keywords<span className='text-green-900'> Research Analysis</span>
                         </h1>
                         <p className='max-w-xl space-y-3 text-lg font-'>
                             <p >Keywords are the cornerstone of SEO</p>
@@ -126,7 +134,7 @@ export const SearchEngine = () => {
 
                 <div className='md:flex justify-between p-16'>
                     <div>
-                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Link<span className='text-green-900'>Building Services</span>
+                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Link<span className='text-green-900'> Building Services</span>
                         </h1>
                         <p className='max-w-xl space-y-3 text-lg font-'>
                             <p >As a leading SEO agency with clients across the globe, we understand what it takes to build and sustain a competitive edge on an international scale.</p>
@@ -140,7 +148,7 @@ export const SearchEngine = () => {
                         <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/image32-1.png' className='rounded-lg  md:max-w-2xl md:mr-20' />
                     </div>
                 </div>
-            </div>
+          
         </>
     )
 }

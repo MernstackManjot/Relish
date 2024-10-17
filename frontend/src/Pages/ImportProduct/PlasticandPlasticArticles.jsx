@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 
@@ -10,8 +10,12 @@ export const PlasticandPlasticArticles = () => {
     navigate(-1);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
+
   return (
-    <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-7 font-serif min-h-screen">
+    <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-7 font-serif ">
       <div className="relative">
         <div
           onClick={handleBack}

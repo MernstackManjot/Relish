@@ -18,7 +18,7 @@ export const ExportProduct = () => {
 
   return (
     <>
-      <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-green-50 font-serif min-h-screen">
+      <div className="p-4 sm:p-6 md:p-8 lg:p-10  font-serif min-h-screen">
         <div className="flex flex-col sm:flex-row justify-center items-center mb-8 space-y-4 sm:space-y-0">
           <div onClick={handleBack} className="bg-green-800 h-10 w-10 text-gray-100 p-2 rounded-full cursor-pointer flex items-center justify-center md:mb-48">
             <FaArrowLeft className="text-2xl " />

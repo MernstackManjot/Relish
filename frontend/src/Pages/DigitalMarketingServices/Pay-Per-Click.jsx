@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
+import photorelish from "../../../public/photorelish.jpg"
 
 
 export const PayPerClick = () => {
@@ -22,11 +23,21 @@ export const PayPerClick = () => {
     }, []);
     return (
         <>
-       
+        <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>PPC Company   </h1>
+                </div>
+            </div>
 
             <div  className={`${isTextVisible ? 'animate-slide' : ''}`}>
 
-            <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-10 font-serif ">
+            <div className="  p-6 sm:p-8 md:p-10 lg:p-10 ">
                 <div className="relative">
                     <div
                         onClick={handleBack}
@@ -34,10 +45,10 @@ export const PayPerClick = () => {
                     >
                         <FaArrowLeft className="text-2xl" />
                     </div>
-                    <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb-10 ${isTextVisible ? 'animate-slide' : ''}`}>PPC Company </h1>
+                    {/* <h1 className={`text-2xl md:text-5xl text-green-700 text-center font-bold mb-10 ${isTextVisible ? 'animate-slide' : ''}`}> </h1> */}
                     <div className='md:flex justify-between items-center p-10'>
                         <div>
-                            <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 text-green-700 gap-3">Search Engine Marketing (SEM)<span className='text-green-900'> PPC Agency</span>
+                            <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 text-green-950 gap-3">Search Engine Marketing (SEM)<span className='text-green-800'> <br/>PPC Agency</span>
                             </h1>
                             <p className='max-w-xl space-y-3 text-lg font-'>
                                 <p >When managing an online business or maintaining a presence across various platforms, reaching a broad audience with your content can be challenging.</p>
@@ -52,8 +63,8 @@ export const PayPerClick = () => {
                 </div>
             </div>
 
-            <div className='bg-green-50 p-12'>
-                <h1 className="text-3xl sm:text-2xl md:text-3xl font-bold mb-5 text-green-700 text-center "> What is PPC(SEM)<span className='text-green-800'> (Pay Per Click)?</span>
+            <div className='bg-green-100 p-12'>
+                <h1 className="text-3xl sm:text-2xl md:text-3xl font-bold mb-5 text-green-950 text-center "> What is PPC(SEM)<span className='text-green-800'> (Pay Per Click)?</span>
                 </h1>
                 <p className="text-base sm:text-lg space-x- space-y-2 items-center gap-6 mb- text-center">
                     <p>Pay-Per-Click (PPC) is an online advertising model designed to drive traffic to your website through paid promotions.</p>
@@ -65,7 +76,7 @@ export const PayPerClick = () => {
             </div>
 
             <div className='bg-gray-100 p-12'>
-                <h1 className="text-3xl sm:text-2xl md:text-3xl font-bold mb-5 text-green-700 text-center "> Our Best<span className='text-green-800'> PPC services</span>
+                <h1 className="text-3xl sm:text-2xl md:text-4xl font-bold mb-5 text-green-950 text-center "> Our Best<span className='text-green-800'> PPC services</span>
                 </h1>
                 <p className="text-base sm:text-lg space-x- space-y-2 items-center gap-6  text-center">
                     <p>When you’re new to search engine marketing, it can be challenging to determine which types of ads will be most effective for your business and which methods will drive the most traffic. To help you get started, we’ve outlined the different types of PPC ads you can consider and how our team can assist you in choosing the best approach.</p>
@@ -75,7 +86,7 @@ export const PayPerClick = () => {
 
             <div className='md:flex justify-evenly items-center p-10'>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 texgreen-700 gap-3">Search<span className='text-green-900'> ads</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 texgreen-950 gap-3">Search<span className='text-green-800'> ads</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Search ads are the most widely used type of online advertisement. You’ll often see them whenever you search for something on the internet.</p>
@@ -93,7 +104,7 @@ export const PayPerClick = () => {
                     <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Search-ads-1536x1382.png' className='rounded-lg  md:max-w-sm ' />
                 </div>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Display<span className='text-green-900'> ads</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Display<span className='text-green-800'> ads</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Display ads are advertisements that appear across various websites within the Google Display Network. These ads are shown on partner sites and are designed to target users interested in your product or those who have visited similar websites.</p>
@@ -109,7 +120,7 @@ export const PayPerClick = () => {
 
             <div className='md:flex justify-evenly  items-center p-10'>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Social<span className='text-green-900'> ads</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Social<span className='text-green-800'> ads</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Pay-per-click advertising has now been embraced by major social media platforms like Facebook, Instagram, Twitter, LinkedIn, and others. Ads that appear across these platforms are known as social ads.</p>
@@ -127,7 +138,7 @@ export const PayPerClick = () => {
                     <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/Remarketing-1536x1339.png' className='rounded-lg  md:max-w-72 ' />
                 </div>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Remarketing <span className='text-green-900'> ads</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Remarketing <span className='text-green-800'> ads</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Remarketing is a powerful tool in PPC marketing. It allows you to target individuals who have already shown interest in your product or service.</p>
@@ -141,7 +152,7 @@ export const PayPerClick = () => {
 
             <div className='md:flex justify-evenly items-center p-10'>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Google <span className='text-green-900'> shopping</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Google <span className='text-green-800'> shopping</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Google Shopping ads are a highly effective form of paid advertising for product marketing. These ads appear in a carousel format, showcasing a range of similar products from various websites.</p>
@@ -160,7 +171,7 @@ export const PayPerClick = () => {
                     <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/gmail-1536x903.png' className='rounded-lg  md:max-w-md text-center ' />
                 </div>
                 <div>
-                    <h1 className="text-2xl  sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Gmail sponsored  <span className='text-green-900'> promotions</span>
+                    <h1 className="text-2xl  sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Gmail sponsored  <span className='text-green-800'> promotions</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >Gmail Sponsored Promotions offer an excellent way to advertise directly within a user’s inbox, making it a powerful tool for promoting your business.</p>
@@ -174,7 +185,7 @@ export const PayPerClick = () => {
 
             <div className='md:flex justify-evenly items-center p-10'>
                 <div>
-                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Instream<span className='text-green-900'> ads</span>
+                    <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Instream<span className='text-green-800'> ads</span>
                     </h1>
                     <p className='max-w-xl space-y-3 text-lg font-'>
                         <p >If you use the internet, you’ve likely encountered an instream ad, which is commonly seen on YouTube. Instream ads include those that play before or during a video, as well as display ads that appear within the video screen itself. With 64% of internet users on YouTube, these ads provide a great opportunity to creatively reach your target audience.</p>

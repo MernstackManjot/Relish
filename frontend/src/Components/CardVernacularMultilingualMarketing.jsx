@@ -24,8 +24,8 @@ export const CardVernacularMultilingualMarketing = () => {
     return (
         <>
             <div className="p-10  items-center text-center">
-                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 text-ggreen-800">
-                Our Vernacular <span className='text-green-900'>Marketing Services Cover</span>
+                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 text-green-950">
+                Our Vernacular <span className='text-green-800'>Marketing Services Cover</span>
                 </h1>
                 <p className=' md:text-center md:ml-10 text-lg font'>Relish Multilingual Marketing Services help you identify the ideal target audience and languages using real data insights. We craft a tailored marketing strategy and employ a customized approach for each language and audience, incorporating the right blend of digital marketing tactics such as SEO, PPC, and social media.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">

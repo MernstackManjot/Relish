@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { CardWebDevelopment } from '../../Components/CardWebDevelopment';
+import photorelish from "../../../public/photorelish.jpg"
 
 
 
@@ -44,7 +45,17 @@ export const WebDevelopment = () => {
 
     return (
         <>
-           
+            <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}  >Web Development</h1>
+                </div>
+            </div>
 
             <div className={`text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ${isTextVisible ? 'animate-slide' : ''}`}>
                 <div className="relative">
@@ -56,9 +67,9 @@ export const WebDevelopment = () => {
                     </div>
             </div>
 
-                    <h1 className={`text-3xl lg:text-4xl md:text-4xl  text-green-700 font-bold text-center mb- ${isTextVisible ? 'animate-slide' : ''}`}>
-                        Web Development
-                    </h1>
+                    {/* <h1 className={`text-3xl lg:text-4xl md:text-4xl  text-green-700 font-bold text-center mb- ${isTextVisible ? 'animate-slide' : ''}`}>
+                 
+                    </h1> */}
                     <div className="md:flex justify-center items-center gap-10 p-10">
                         <div>
                             <p className="text-base sm:text-lg">

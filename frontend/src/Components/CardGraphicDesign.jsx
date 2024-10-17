@@ -34,9 +34,9 @@ export const CardGraphicDesign = () => {
 
     return (
         <>
-            <div className="p-6 bg-green-50 items-center text-center">
-                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-800">
-                    Our Graphic Design <span className='text-green-900'>Services Include:</span>
+            <div className="p-6 bg-green-100 items-center text-center">
+                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950">
+                    Our Graphic Design <span className='text-green-800'>Services Include:</span>
                 </h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">
                     {

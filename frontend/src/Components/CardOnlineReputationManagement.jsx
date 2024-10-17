@@ -25,8 +25,8 @@ export const CardOnlineReputationManagement = () => {
     return (
         <>
             <div className="p-10 bg-gray-50 items-center text-center">
-                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-800">
-                Our Web Development <span className='text-green-900'>Services Include:</span>
+                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950">
+                Our Web Development <span className='text-green-800'>Services Include:</span>
                 </h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">
                     {

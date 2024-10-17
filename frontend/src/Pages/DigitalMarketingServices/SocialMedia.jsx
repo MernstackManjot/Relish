@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
 import { SocialMediaMarketing } from '../../Components/SocialMediaMarketing';
+import photorelish from "../../../public/photorelish.jpg"
 
 
 export const SocialMedia = () => {
@@ -22,10 +23,20 @@ export const SocialMedia = () => {
     }, []);
     return (
         <>
+<div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
 
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Social Media Marketing</h1>
+                </div>
+                </div>
 
             <div className={`${isTextVisible ? 'animate-slide' : ''}`}>
-                <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ">
+                <div className="  p-6 sm:p-8 md:p-10 lg:p-12  ">
                     <div className="relative">
                         <div
                             onClick={handleBack}
@@ -33,11 +44,11 @@ export const SocialMedia = () => {
                         >
                             <FaArrowLeft className="text-2xl" />
                         </div>
-                        <h1 className={`text-3xl  text-green-700 text-center md:text-5xl font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Social Media Marketing  </h1>
+                        {/* <h1 className={`text-3xl  text-green-700 text-center md:text-5xl font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Social Media Marketing  </h1> */}
 
                         <div className='md:flex justify-between p-10'>
                             <div>
-                                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3"> Why Your Brand Needs a <span className='text-green-900'> Strong Social Media Presence</span>
+                                <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3"> Why Your Brand Needs a <span className='text-green-800'> Strong Social Media Presence</span>
                                 </h1>
                                 <p className='max-w-xl space-y-3 text-lg font-'>
                                     <p >Approximately 73% of marketers agree that Social Media Marketing is more effective than other marketing platforms. A strong online presence is key to driving real conversions through social media.</p>
@@ -59,10 +70,10 @@ export const SocialMedia = () => {
                     </div>
                 </div>
 
-                <div className='bg-green-50 p-12'>
-                    <h1 className="text-3xl sm:text-2xl md:text-3xl font-bold mb-5 text-green-700 text-center "> Our Social Media<span className='text-green-800'> Marketing Services</span>
+                <div className='bg-green-100 p-12'>
+                    <h1 className="text-3xl sm:text-2xl md:text-3xl font-bold mb-5 text-green-950 text-center "> Our Social Media<span className='text-green-800'> Marketing Services</span>
                     </h1>
-                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-green-700 ">Social Media<span className='text-gray-800'> Optimization (SMO):</span></h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-green-950 ">Social Media<span className='text-green-800'> Optimization (SMO):</span></h2>
                     <p className="text-base sm:text-lg space-x- space-y-2 items-center gap-6 mb-10">
                         <p>Many brands and companies have accounts on multiple social media platforms but struggle to attract traffic or generate conversions. The reason? Their social profiles and content are not optimized.</p>
                         <p>Optimizing for social media is entirely different from optimizing a website, and it’s easy to feel overwhelmed by the process.</p>
@@ -71,7 +82,7 @@ export const SocialMedia = () => {
 
                     </p>
 
-                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-green-700 ">Social Media<span className='text-ggreen-800'> Marketing</span></h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-green-950 ">Social Media<span className='text-green-800'> Marketing</span></h2>
                     <p className="text-base sm:text-lg space-x- space-y-2 items-center gap-6">
                         <p>Every hour, thousands of pieces of content are posted across various categories, hashtags, and topics. In such a crowded space, relying solely on organic methods may not always be enough to reach a wider audience or drive significant traffic and conversions. This is when businesses turn to paid social media advertising.</p>
                         <p>Running ads on social media is not only cost-effective but also provides valuable insights into your target audience. A person’s social profile can reveal key information about their personality, interests, and preferences. Understanding these details is crucial for businesses looking to offer products or services that truly resonate with their audience.</p>
@@ -89,7 +100,7 @@ export const SocialMedia = () => {
                         <img src='https://peerdemo.in/relish/wp-content/uploads/2024/09/881.jpg' className='rounded-lg md:max-w-sm mb-6' />
                     </div>
                     <div>
-                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-700 gap-3">Our services include <span className='text-green-900'>platforms such as</span>
+                        <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-4 text-green-950 gap-3">Our services include <span className='text-green-800'>platforms such as</span>
                         </h1>
                         <ul className='text-lg space-y-2'>
                             <li className='flex items-center gap-3'><SiTicktick className='text-green-800' />Facebook</li>

@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 
 import { CardVernacularMultilingualMarketing } from '../../Components/CardVernacularMultilingualMarketing';
+import photorelish from "../../../public/photorelish.jpg"
 
 
 export const VernacularMultilingualMarketing = () => {
@@ -23,7 +24,17 @@ export const VernacularMultilingualMarketing = () => {
     }, []);
     return (
         <>
-          
+          <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src={photorelish}
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Vernacular Multilingual Marketing</h1>
+                </div>
+                </div>
 
             <div className={`${isTextVisible ? 'animate-slide' : ''}`}>
             <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-12 font-serif ">
@@ -34,7 +45,7 @@ export const VernacularMultilingualMarketing = () => {
                     >
                         <FaArrowLeft className="text-2xl" />
                     </div>
-                    <h1 className={`text-2xl md:text-5xl text-green-700  text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}>Vernacular Multilingual Marketing</h1>
+                    {/* <h1 className={`text-2xl md:text-5xl text-green-700  ml-3 text-center font-bold mb- ${isTextVisible ? 'animate-slide' : ''}`}></h1> */}
                     <div className='md:flex justify-evenly gap-2 md:gap-20 items-center p-10'>
                         <div>
 
@@ -50,8 +61,8 @@ export const VernacularMultilingualMarketing = () => {
                 </div>
             </div>
 
-            <div className='p-10 bg-green-50'>
-                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-700 text-center gap-3"> Best Multilingual <span className='text-green-900'> Marketing Company</span>
+            <div className='p-10 bg-green-100'>
+                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-950 text-center gap-3"> Best Multilingual <span className='text-green-800'> Marketing Company</span>
                 </h1>
                 <div className='md:flex justify-center items-center p- gap-40'>
 
@@ -70,7 +81,7 @@ export const VernacularMultilingualMarketing = () => {
 
            
             <div className='p-10 bg-gray-100'>
-                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-700 text-center gap-3">We Think and Speak  <span className='text-green-900'> in Your Language</span>
+                <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold mb- text-green-950 text-center gap-3">We Think and Speak  <span className='text-green-800'> in Your Language</span>
                 </h1>
                 <div className='md:flex justify-center items-center p-10 gap-40'>
 

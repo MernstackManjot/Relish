@@ -8,6 +8,17 @@ export const About = () => {
   }, []);
   return (
     <>
+     <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+                <img
+                    src="photorelish.jpg"
+                    alt="Background"
+                    className="w-full h-ful"
+                />
+
+                <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+                    <h1 className={`text-2xl md:text-5xl font-bold mb- `}>About Us  </h1>
+                </div>
+            </div>
      <div className={`md:flex justify-evenly items-center p-10 gap-20 `}   >
         <div>
           <h1 className="text-lg md:text-xl font-bold text-green-700">About Relish</h1>
@@ -60,9 +71,7 @@ export const About = () => {
             <li><span className='font-bold'> Export-Import Consultancy</span><br/>Navigating global trade can be challenging. With our expertise in export-import regulations,
               compliance, and market entry strategies, we assist businesses in expanding their footprint
               internationally, simplifying the complexities of cross-border trade.</li>
-            <li><span className='font-bold'> Financial & Loan Consultancy</span><br/>Financial planning is critical for sustainable growth. We provide personalized financial
-              consulting services, including business financing, loans, and investment strategies, designed
-              to help our clients manage their financial health and meet their goals.</li>
+            <li><span className='font-bold'>Education Consultancy</span><br/>Navigating the education landscape can be daunting. Our consultancy offers personalized guidance on academic pathways, admissions strategies, and career planning. We empower students and parents with the insights needed to make informed decisions, ensuring a successful educational journey.</li>
 
           </ul>
         </div>

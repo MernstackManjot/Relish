@@ -54,20 +54,20 @@ export const Navbar = () => {
     };
   }, []);
   return (
-    <div className="  text-zinc-500  sm:p-4 md:p-1 shadow-md font-serif ">
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto ">
+    <div className="    shadow-md  text-black font-medium ">
+      <div className="flex items-center justify-between max-w-screen-xl mx-3 ">
 
-        <div className="flex items-center p-1">
+        <div className="flex items-center ">
           <img
-            src='logo16.png'
+            src='Relishcmlogo.png'
             alt='Logo'
-            className='h-16 md:h-24 w-auto '
+            className='h-16 md:h-32 w-auto '
           />
           {/* <h1 className='text-5xl '>Logo</h1> */}
         </div>
 
 
-        <div className="hidden md:flex font-bold mr-3">
+        <div className="hidden md:flex  mr-3">
           <ul className="flex flex-row space-x-10">
 
 
@@ -76,15 +76,15 @@ export const Navbar = () => {
               <li key={item.path} className="relative group">
                 <Link
                   to={item.path}
-                  className={`hover:text-green-900 cursor-pointer text-lg ${location.pathname === item.path ? 'text-green-900' : ''
+                  className={` cursor-pointer text-lg ${location.pathname === item.path ? '' : ''
                     }`}
                 >
                   {item.name}
                 </Link>
-                <span
+                {/* <span
                   className={`absolute left-0 bottom-0 w-full h-0.5 bg-green-900 transition-transform duration-300 ${location.pathname === item.path ? 'scale-x-100' : 'scale-x-0'
                     }`}
-                ></span>
+                ></span> */}
               </li>
             ))}
 
