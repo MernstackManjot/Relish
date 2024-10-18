@@ -18,18 +18,18 @@ export const HomeCard = () => {
   };
 
   return (
-    <div className="p-4 sm:p-6 md:p-8
+    <div className="p-4 sm:p-6 md:p-8 bg-gradient-to-b from-green-50 from-10% via-green-50 via-30% to-green-100 to-90%
     
      font-serif text-center">
-      <h1 className="text-2xl font-bold mb-1 text-green-900 inline-block">
-        Our Services
+      <h1 className="text-4xl font-bold mb-1 text-green-950 inline-block">
+        Our <span className='text-green-800'>Services</span>
       </h1>
       <div className="flex items-center justify-center text-center mb-6">
-      <span className=" border-b-8 rounded-full border-green-500 w-2 mx-"></span>
-             <span className=" border-b-8 rounded-full border-green-500 w-2 mx-2"></span>
-                    <div className="border-b-4  border-green-500 w-20"></div>
-                    <span className=" border-b-8 rounded-full border-green-500 w-2 mx-2"></span>
-                 <span className=" border-b-8 rounded-full border-green-500 w-2 mx-"></span>
+      <span className=" border-b-8 rounded-full border-green-800 w-2 mx-"></span>
+             <span className=" border-b-8 rounded-full border-green-800 w-2 mx-2"></span>
+                    <div className="border-b-4  border-green-800 w-20"></div>
+                    <span className=" border-b-8 rounded-full border-green-800 w-2 mx-2"></span>
+                 <span className=" border-b-8 rounded-full border-green-800 w-2 mx-"></span>
                 </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-8 justify-items-center lg:ml-28 lg:mr-28">

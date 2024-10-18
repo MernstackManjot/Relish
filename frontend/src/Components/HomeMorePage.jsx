@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const HomeMorePage = () => {
     return (
@@ -12,9 +13,16 @@ export const HomeMorePage = () => {
                         <p className="text-sm md:text-lg max-w-2xl mx-auto font-semibold">
                      Whether you hav a question, want to collaborate, or simply want to share your thoughts, we'd love to hear from you.
                         </p>
-                        <button className="bg-green-700 text-white py-3 px-8 mt-5 rounded-lg font-bold transition duration-300 transform hover:bg-green-600 hover:scale-105 active:scale-95">
-                            Contact Us
-                        </button>
+                        <div className="flex justify-center items-center mt-3">
+                            <Link to="/contact">
+                                <div className="relative inline-block overflow-hidden group">
+                                    <button className="bg-white text-black font-medium py-3 px-8 rounded-lg transition duration-300 z-10">
+                                        Contact Us
+                                    </button>
+                                    <span className="absolute inset-0 bg-green-700 font-medium rounded-lg py-3 px-8 transform  scale-y-0 scale-x-0  transition-transform duration-300 origin-top-left group-hover:scale-x-100 group-hover:scale-y-100"> Contact Us</span>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
