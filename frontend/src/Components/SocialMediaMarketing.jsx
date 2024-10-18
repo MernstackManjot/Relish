@@ -67,15 +67,15 @@ export const SocialMediaMarketing = () => {
 
     return (
         <div ref={sectionRef} className='relative w-full h-[580px] md:h-[200px] lg:h-[300px] z-0 overflow-hidden font-thin'>
-            <video
-                className="absolute inset-0 w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-            >
-                <source src="/relishvideo9.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+           <video
+                    className="absolute inset-0 w-full h-full object-cover "
+                    autoPlay
+                    loop
+                    muted
+                >
+                    <source src="/relishvideo9.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
 
             <div className="justify-center  absolute inset-0 items-center text-white z-0 bg-black bg-opacity-100 text-center p-4">
                 <h1 className="text-2xl md:text-4xl font-bold mb-10 p-5">Leading 3 Social Networks for Businesses</h1>

@@ -22,11 +22,11 @@ export default function Dropdownhome() {
                         className={`border p-4 rounded-lg border-green-800 mb-2 transition-colors duration-300 ${add === e ? 'bg-green-800 text-white' : 'bg-opacity-70'}`}
                     >
                         <div className='flex justify-between items-center cursor-pointer' onClick={() => handleClick(e)}>
-                            <h2 className='text-xl'>{item.title}</h2>
+                            <h2 className='text-lg md:text-xl'>{item.title}</h2>
                             <span className='text-2xl'>{add === e ? '-' : '+'}</span>
                         </div>
                         <div className={`${add === e ? 'max-h-screen' : 'max-h-0 overflow-hidden'} `}>
-                            <p className='text-md p-2'>{item.description}</p>
+                            <p className='text-md lg:text-md p-2'>{item.description}</p>
                         </div>
                     </div>
                 ))}
