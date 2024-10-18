@@ -35,7 +35,7 @@ export const HomePage = () => {
                 </div>
             </div> */}
 
-<div className="relative w-full h-[530px] md:h-[400px] lg:h-[530px] overflow-hidden font-thin">
+<div className="relative w-full h-[530px] md:h-[400px] lg:h-[570px] overflow-hidden font-thin">
                 <video 
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay

@@ -16,7 +16,21 @@ export const Cosmetics = () => {
   }, []);
     return (
         <>
+<div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
+        <video
+          className="absolute inset-0 w-full h-full object-cover "
+          autoPlay
+          loop
+          muted
+        >
+          <source src="/relishvideo9.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
+        <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
+          <h1 className={`text-2xl md:text-4xl font-bold mb- `}>Cosmetics   </h1>
+        </div>
+      </div>
           
     <div className=" text-gray-800 p-6 sm:p-8 md:p-10 lg:p-7 font-serif ">
       <div className="relative">
@@ -28,7 +42,7 @@ export const Cosmetics = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl font-bold mb-10 text-green-800 text-center">   Cosmetics</h1>
+          {/* <h1 className="text-2xl sm:text-3xl font-bold mb-10 text-green-800 text-center">   </h1> */}
        
           <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-10">
             <div className="relative w-full md:w-1/2 h-96">

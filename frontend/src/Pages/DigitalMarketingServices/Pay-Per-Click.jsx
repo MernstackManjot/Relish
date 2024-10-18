@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
-import photorelish from "../../../public/photorelish.jpg"
+import relishvideo from "./images/relishvideo9.mp4"
+
 
 
 export const PayPerClick = () => {
@@ -24,11 +25,15 @@ export const PayPerClick = () => {
     return (
         <>
         <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
-                <img
-                    src={photorelish}
-                    alt="Background"
-                    className="w-full h-ful"
-                />
+        <video 
+        className="absolute inset-0 w-full h-full object-cover " 
+        autoPlay
+        loop
+        muted
+      >
+        <source src="/relishvideo9.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
                 <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
                     <h1 className={`text-2xl md:text-4xl font-bold mb- `}>PPC Company   </h1>

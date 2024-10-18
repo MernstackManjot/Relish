@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Card } from './Cards'
 import { FaArrowLeft } from 'react-icons/fa';
 import { ExportImportCard } from './CardExport-Import';
-import photorelish from "../../public/photorelish.jpg"
+import relishvideo from '../../public/relishvideo9.mp4'
 
 export const ExportProduct = () => {
   const navigate = useNavigate()
@@ -20,11 +20,15 @@ export const ExportProduct = () => {
   return (
     <>
     <div className='relative w-full h-[90px] md:h-[200px] lg:h-[180px] overflow-hidden font-thin'>
-                <img
-                    src={photorelish}
-                    alt="Background"
-                    className="w-full h-ful"
-                />
+    <video 
+        className="absolute inset-0 w-full h-full object-cover " 
+        autoPlay
+        loop
+        muted
+      >
+        <source src="/relishvideo9.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
                 <div className="justify-center absolute inset-0 flex items-center bg-black bg-opacity-0 text-white text-center p-4">
                     <h1 className={`text-2xl md:text-4xl font-bold mb- `}  >Export Services</h1>

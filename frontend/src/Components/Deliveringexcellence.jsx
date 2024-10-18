@@ -4,16 +4,16 @@ import React, { useEffect, useState, useRef } from 'react';
 export const Deliveringexcellence = () => {
     const data = [
         {
-            target: 4000,
+            target: 999,
             name: "Satisfied Clients",
             suffix: "+",
-            speed: 1,
+            speed: 7,
         },
         {
             target: 99,
             name: "Projects Done",
             suffix: "%",
-            speed: 80,
+            speed: 70,
         },
         {
             target: 20,
@@ -22,7 +22,7 @@ export const Deliveringexcellence = () => {
             speed: 300,
         },
         {
-            target: 20,
+            target: 10,
             name: "Years Of Experience",
             suffix: "+",
             speed: 300,
